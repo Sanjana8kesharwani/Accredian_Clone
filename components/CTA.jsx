@@ -111,15 +111,13 @@ export default function CTA() {
               </select>
 
               <button onClick={handleSubmit} disabled={status === 'loading'}
-              style={{width: '100%', padding: '14px',  background: status === 'success' ? '#00c896' : 'linear-gradient(135deg, #1a6bff, #4f8cff)',
-                color: 'white', border: 'none', borderRadius: 10,fontSize: 16, fontWeight: 700, cursor: status === 'loading' ? 'wait' : 'pointer',
-                fontFamily: 'Sora, sans-serif', transition: 'all 0.2s',boxShadow: '0 6px 20px rgba(26,107,255,0.35)',}}>
+              onMouseEnter={e => { if (status !== 'loading') e.currentTarget.style.transform = 'translateY(-2px)'; }}
+              onMouseLeave={e => e.currentTarget.style.transform = 'none'}
+              style={{width: '100%', padding: '14px',background: status === 'success' ? '#00c896' : 'linear-gradient(135deg, #1a6bff, #4f8cff)',
+                color: 'white', border: 'none', borderRadius: 10, fontSize: 16, fontWeight: 700, cursor: status === 'loading' ? 'wait' : 'pointer',
+                 fontFamily: 'Sora, sans-serif',  transition: 'all 0.2s',boxShadow: '0 6px 20px rgba(26,107,255,0.35)',}}>
   
-              onMouseEnter={e => { if (status !== 'loading') e.currentTarget.style.transform = 'translateY(-2px)'; }} onMouseLeave={e => e.currentTarget.style.transform = 'none'} 
-  
-            {status === 'loading' ? 'Submitting...': status === 'success'? '✓ Request Received!' : 'Get Started →'}
-          </button>
-
+  {status === 'loading'? 'Submitting...': status === 'success'? '✓ Request Received!': 'Get Started →'}</button>
               {status === 'error' && (
                 <p style={{ color: '#e53e3e', fontSize: 13, textAlign: 'center' }}>
                   Form submitted successfully!
