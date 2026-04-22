@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Accredian Enterprise Page Clone
 
-## Getting Started
+## 📌 Overview
 
-First, run the development server:
+This project is a partial clone of the Accredian Enterprise website built using Next.js.
+The goal was to recreate the landing page with a clean UI, responsive design, and reusable components.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🛠️ Tech Stack
+
+* Next.js (App Router)
+* React (Functional Components + Hooks)
+* CSS (Custom styling)
+* react-hot-toast (for notifications)
+* Vercel (Deployment)
+
+---
+
+## ✨ Features
+
+* Fully responsive landing page (mobile + desktop)
+* Reusable components (Navbar, Hero, Features, Testimonials, CTA, Footer)
+* Clean and structured UI
+* Smooth navigation between sections
+* Lead capture form with toast notifications
+* Organized data handling using a single `data/index.js`
+
+---
+
+## 📂 Folder Structure
+
+```
+app/
+components/
+data/
+  index.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
+```
+git clone <your-repo-link>
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Run the project:
 
-## Deploy on Vercel
+```
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Open in browser:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+http://localhost:3000
+```
+
+---
+
+## 🤖 AI Usage
+
+AI tools like ChatGPT were used during development for:
+
+* Debugging errors (Next.js, React issues)
+* Structuring components properly
+* Improving UI and fixing layout issues
+* Implementing toast notifications
+
+Manual improvements done:
+
+* UI refinement and styling adjustments
+* Component structuring
+* Fixing logic errors and optimizing code flow
+
+---
+
+## 🚀 Deployment
+
+The project is deployed on Vercel:
+
+👉 Live Link: <your-vercel-link>
+
+---
+
+## 🔮 Future Improvements
+
+* Add backend API for storing leads
+* Improve animations and transitions
+* Enhance accessibility
+* Add authentication for users
+
+---
+
+## 👩‍💻 Author
+
+Sanjana Kesharwani
